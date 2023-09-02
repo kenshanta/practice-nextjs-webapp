@@ -12,9 +12,9 @@ const getData = async () => {
 
   return todos
 }
+
 const TodosPage = async () => {
   const todos = await getData()
-  console.log(todos, '[second] tria;')
   return (
     <div>
       <TodoList todos={todos} />

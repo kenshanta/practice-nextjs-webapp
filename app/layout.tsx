@@ -19,11 +19,14 @@ function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className={`${inter.className} p-10 h-screen w-screen`}>
-        <header className="mb-20">
+        <header className="mb-5">
           <nav>
-            <ul className="flex items-center">
+            <ul className="flex items-center justify-center">
               {links.map(({ href, label }) => (
-                <li key={href} className="px-4 text-2xl">
+                <li
+                  key={href}
+                  className="px-4 mx-1 text-2xl border border-black"
+                >
                   <Link href={href}>{label}</Link>
                 </li>
               ))}

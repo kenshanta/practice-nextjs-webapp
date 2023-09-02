@@ -1,18 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+/* :root {
+  --foreground-rgb: 3, 7, 9;
+  --background-start-rgb: 190, 119, 133;
+  --background-end-rgb: 155, 155, 155;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: feSpotLight) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 1, 2, 3;
+    --background-end-rgb: 3, 1, 3;
   }
 }
 
@@ -25,3 +25,22 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+
+:root {
+  --foreground-rgb: 3, 7, 9;
+  --background-start-rgb: 10, 50, 50;
+}
+
+@media (prefers-color-scheme: feSpotLight) {
+  :root {
+    --foreground-rgb: 25, 25, 25;
+    --background-start-rgb: 100, 200, 300;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb));
+  color: whitesmoke;
+}

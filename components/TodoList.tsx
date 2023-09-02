@@ -7,9 +7,9 @@ type TodoListType = {
 }
 
 const TodoList = ({ todos }: any = []) => {
-  console.log(todos, '--------------')
+  // console.log(todos, '--------------')
   return (
-    <div>
+    <div className="mt-5">
       {todos.map((todo: TodoListType) => (
         <Todo key={todo.id} todo={todo} />
       ))}
